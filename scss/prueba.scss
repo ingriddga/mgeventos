@@ -22,42 +22,42 @@ body {
 }
 
 .contenedor-eventos { /*Seccion Eventos*/
-	background-image: url("/images/imagen-principal-eventos.png");
+	background-image: url("../images/imagen-principal-eventos.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
 }
 
 .contenedor-catering { /*Seccion Catering*/
-	background-image: url("/images/imagen-principal-catering.png");
+	background-image: url("../images/imagen-principal-catering.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
 }
 
 .contenedor-servicios { /*Seccion Servicios*/
-	background-image: url("/images/imagen-principal-servicios3.png");
+	background-image: url("../images/imagen-principal-servicios3.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
 }
 
 .contenedor-galeria { /*Seccion Galería*/
-	background-image: url("/images/imagen-principal-galeria.png");
+	background-image: url("../images/imagen-principal-galeria.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
 }
 
 .contenedor-contacto { /*Seccion Ubicacion-Contacto*/
-	background-image: url("/images/imagen-principal-contacto2.png");
+	background-image: url("../images/imagen-principal-contacto2.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
 }
 
 .contenedor-quienes-somos { /*Seccion Quienes Somos*/
-	background-image: url("/images/imagen-principal-quienessomos.png");
+	background-image: url("../images/imagen-principal-quienessomos.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
     height: 100vh;
@@ -121,7 +121,7 @@ body {
 
 .main-section {
 	background-color: white;
-	background-image: url("/images/img-main-white.jpg");
+	background-image: url("../images/img-main-white.jpg");
 	background-repeat: no-repeat;
 	background-position-x: center;
 	height: 400px;
@@ -489,7 +489,7 @@ body {
 /*SECTION 6 -NEWSLETTER*/
 
 .hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chica-news.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/chica-news.jpeg");
 	height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -651,7 +651,7 @@ body {
 }
 
 .gracias-img {
-	background-image: url("/images/gracias.jpg");
+	background-image: url("../images/gracias.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -1218,18 +1218,18 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 
 .criollo-img, .italiano-img, .tradicional-img, .pizza-img {
     height: 600px;
-    background-image: url('/images/criollo.png');
+    background-image: url('../images/criollo.png');
     background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
 }
 
 .pizza-img {
-    background-image: url('/images/pizza.png');
+    background-image: url('../images/pizza.png');
 }
 
 .italiano-img {
-    background-image: url('/images/pastas.png');
+    background-image: url('../images/pastas.png');
 }
 
 .hover-border {
