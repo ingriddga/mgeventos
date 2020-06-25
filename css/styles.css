@@ -1,0 +1,1413 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family:"Montserrat";
+	color: #3a3a3a;
+	position: relative;
+}
+
+@font-face {
+    font-family: "Butler";
+    src: url("/font/butler")
+}
+
+.contenedor-eventos { /*Seccion Eventos*/
+	background-image: url("/images/imagen-principal-eventos.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-catering { /*Seccion Catering*/
+	background-image: url("/images/imagen-principal-catering.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-servicios { /*Seccion Servicios*/
+	background-image: url("images/imagen-principal-servicios3.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-galeria { /*Seccion Galería*/
+	background-image: url("/images/imagen-principal-galeria.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-contacto { /*Seccion Ubicacion-Contacto*/
+	background-image: url("/images/imagen-principal-contacto2.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-quienes-somos { /*Seccion Quienes Somos*/
+	background-image: url("/images/imagen-principal-quienessomos.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 70px;
+ /*   position: relative;*/
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    font-weight: 200;
+	letter-spacing: 0.04rem;
+	color: #FFFFFF;
+	background:transparent !important;
+	margin-top: 20px;
+	padding-left: 30px;
+	transition: top 0.3s;
+}
+
+.navbar-nav li {
+	padding-right: .8rem;
+	font-family: "Montserrat";
+}
+
+.navbar-brand img {
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #C59D5F;
+}
+
+
+ 
+
+/*CAROUSEL*/
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+	backface-visibility: visible;
+  }
+
+/*SECTION 1 - MG MAIN*/
+
+.main-section {
+	background-color: white;
+	background-image: url("/images/img-main-white.jpg");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	height: 400px;
+}
+
+.one-section h3 {
+	font-family: "Butler";
+	font-size: 40px;
+	color: #a6864b;
+}
+
+.subtitulo-mg {
+	font-family: "Butler";
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+
+.conocenos-1 {
+	border: 1px solid #a6864b;
+	background-color: transparent;
+	border-radius: 0;
+	height: 8%;
+	width: 15%;
+}
+
+.conocenos-1 a {
+	color: rgb(29, 29, 29);
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+}
+
+.conocenos-1:hover {
+	background-color: #C59D5F;
+	border: none;
+}
+
+.conocenos-1 a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*SECTION 2 - SLIDES IMAGES MAIN*/
+
+.carousel-nav-icon {
+	height: 18px;
+	width: 18px;
+ }
+
+.carousel-item .col, .col-sm, .col-md {
+	   margin: 8px;
+	   height: 250px;
+	   background-size: cover;
+	   background-position: center center;
+}
+
+ .prueba-images{
+	height: 50vh;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+
+
+/*SECTION 3 - ICONS*/
+
+#icons-section {
+	background-color: #a6864b;
+}
+
+.icons-section {
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.calidez,
+.seguridad,
+.atencion,
+.tecnologia {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	padding-top: 5px;
+	color: #f3f3f3;
+}
+
+.texto-calidez,
+.texto-seguridad,
+.texto-atencion,
+.texto-tecno {
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 14px;
+	color: #f3f3f3;
+}
+
+
+/*ICONS*/
+.fa-heart,
+.fa-star,
+.fa-check-circle {
+	color: #f3f3f3;
+
+}
+
+.linea-icon {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 5px;
+	border-color: #f3f3f3;
+	width: 20px;
+}
+
+
+/*SECTION 4 - SERVICES*/
+.services-index {
+	height: 700px;
+	/*background-color: #E9E9E9;*/
+	display: flex;
+  	justify-content: space-between;
+}
+
+
+.img-services {
+	height: 600px;
+	object-fit: cover;
+	background-position-x: center;
+}
+
+.text-services h4 {
+	font-family: "Butler";
+	font-size: 36px;
+	color: #a6864b;
+}
+
+.text-services p {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+	color: #3a3a3a;
+}
+
+.sub-services {
+	font-family: "Butler";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.04em;
+	color: #3a3a3a;
+}
+
+.btn-services {
+	border: 1px solid #a6864b;
+	background-color: transparent;
+	border-radius: 0;
+	height: 8%;
+	width: 25%;
+}
+
+.btn-services a {
+	color:#a6864b;
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.08em;
+}
+
+.btn-services:hover {
+	background-color: #a6864b;
+	border: 1px solid #a6864b;
+}
+
+.btn-services a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*SECTION- IMAGENES MAIN*/
+
+/*.imagenes-index {
+	background-color: #a6864b;
+}
+
+.main-images:hover {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	transition:all .5s ease-in-out;
+}
+
+.main-images {overflow:hidden;}
+
+.main-images:hover {
+	filter: opacity(.5);
+	cursor: pointer;
+}
+
+
+.texto-frase {
+	font-family: "Butler";
+	font-size: 26px;
+	color: #a6864b;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+
+/*SECTION 5 EVENTOS*/
+
+.main-title{
+	color: #2d2d2d;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 0.7em 0;
+  }
+  
+  .container-ev{
+	padding: 1em 0;
+	float: left;
+	width: 50%;
+  }
+  @media screen and (max-width: 640px){
+	.container-ev{
+	  display: block;
+	  width: 100%;
+	}
+  }
+  
+  @media screen and (min-width: 900px){
+	.container-ev{
+	  width: 33.33333%;
+	}
+  }
+  
+.titulo-ev-index h4 {
+	font-family: "Butler";
+	font-size: 36px;
+	color: #a6864b;
+}
+
+.titulo-ev-index p {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+	color: #3a3a3a;
+}
+  
+  .content {
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	overflow: hidden;
+	align-items: center;
+  }
+
+.corp, .even, .soc {
+	font-family: "Butler";
+	font-size: 30px;
+	font-weight: 400;
+	color: #FFFFFF;
+	position: absolute;
+}
+
+
+.corp {
+	top: 45%;
+	left: 25%;
+}
+
+.even {
+	top: 45%;
+	left: 35%;
+}
+
+.soc {
+	top: 45%;
+	left: 35%;
+}
+@media screen and (max-width: 640px){
+	.corp, .even, .soc {
+		font-size: 15px;
+
+	}
+  }
+
+  
+  .content .content-overlay {
+	background: rgba(151, 124, 73, 0.966);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+	opacity: 1;
+  }
+  
+  .content-image{
+	width: 100%;
+  }
+  
+  .content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+  }
+  
+  .content-details h3{
+	color: #fff;
+	font-family: "Butler";
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+  }
+  
+  .content-details p{
+	color: #fff;
+	font-family: "Montserrat";
+	font-weight: 200;
+	font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+	top: 80%;
+  }
+
+
+.ev-title {
+	position: absolute;
+	text-align: center;
+}  
+
+
+/*SECTION 6 -NEWSLETTER*/
+
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chica-news.jpeg");
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  
+  .hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+  }
+
+.hero-text h3 {
+	font-family: "Butler";
+	font-size: 40px;
+	color: #FFFFFF;
+} 
+
+.hero-text p {
+	font-family: "Montserrat";
+	font-weight: 200;
+}
+
+.form-control {
+	width: 30px;
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+}
+
+.form-control:hover {
+	background-color: transparent;
+	color: #FFFFFF;
+	box-shadow: none;
+}
+
+.form-control:focus {
+	background-color: transparent;
+	box-shadow: none;
+	border-color: #FFFFFF;
+}
+
+
+/*SECTION 7 - TESTIMONIOS*/
+.titulo-test {
+	font-family: "Butler";
+	font-size: 35px;
+	color: #a6864b;
+	text-align: center;
+}
+
+.opinion {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+	color: #3a3a3a;
+}
+
+.susana,
+.valen,
+.joaquin {
+	font-family: "Butler";
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.testimonios-dire {
+	font-family: "Butler";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+.icon-next {
+	color: #3A3A3A;
+}
+
+.fondo-eventos {
+	background-color: #f3f3f3;
+}
+
+.small-gallery {
+	background-color: #f3f3f3;
+}
+
+
+/*FINAL SECTION*/
+
+.gracias {
+	height: 500px;
+	background-color: #9B6D37;
+}
+
+
+.gracias-text {
+	top: 20%;
+	min-height: 50%;
+}
+
+.gracias-text h3 {
+	font-family: "Butler";
+	font-size: 80px;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	line-height: 1.04em;
+	color: #FFFFFF;
+}
+
+
+@media (min-width: 992px) {
+	.gracias-text h3 { 
+		font-family: "Butler";
+		font-size: 80px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+	}
+
+}
+
+
+@media (max-width: 992px) {
+	.gracias-text h3 { 
+		font-family: "Butler";
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+	}
+
+}
+
+.gracias-text p {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+	color: #FFFFFF;
+}
+
+.gracias-img {
+	background-image: url("/images/gracias.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+
+/*BUTTONS*/
+
+.btn-outline-light {
+    margin-bottom: 200px;
+    margin-top: 0;
+    width: 150px;
+    height: 40px;
+	font-size: 16px;
+	border-radius: 0;
+}
+
+.btn-outline-light:hover {
+    background-color: #C59D5F;
+    color: white;
+    border: none;
+}
+
+.btn-outline-light a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+	font-size: 16px;
+	border-radius: 0;
+}
+
+.btn-outline-secondary:hover {
+    background-color: white;
+    color: #C59D5F;
+}
+
+.btn-prymary {
+    color: #FFFFFF;
+    font-family: "Butler";
+	font-size: 16px;
+	border-radius: 0;
+}
+
+.btn-prymary:hover {
+    color: #55592E;
+}
+
+#btn-newsletter {
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	border-radius: 0;
+	color: #FFFFFF;
+}
+
+#btn-newsletter:hover {
+	background-color: #a6864b;
+	border: none;
+	color: #FFFFFF;
+}
+
+
+/*FOOTER*/
+.footer-bs {
+    background-color: #000000;
+	padding: 25px 50px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	color: white;
+}
+
+
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+	padding:3px 25px; 
+}
+
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+	border-color: transparent;
+}
+
+.footer-bs .footer-brand p { 
+	font-size:11px;
+	color:rgba(255, 255, 255, 0.993);
+	font-weight: 200;
+	letter-spacing: 0.04rem;
+	padding-bottom: 0px;
+}
+
+.footer-bs .footer-nav ul.pages {
+	list-style:none;
+	padding:0px;
+}
+
+.footer-bs .footer-nav ul.pages li {
+	padding: 0px;
+	margin: 0;
+}
+
+.footer-bs .footer-nav ul.pages a {
+	font-family: "Montserrat";
+	font-size: 10px;
+	letter-spacing: 0.04rem;
+	color:rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight:200;
+}
+
+.footer-bs .footer-nav ul.pages a:hover {
+	color:#C59D5F;
+	text-decoration:none;
+}
+
+.footer-nav ul.pages h2 {
+	font-family: "Montserrat";
+	font-size: 12px;
+	color: #a6864b;
+}
+
+.footer-bs .footer-nav ul.list { 
+	list-style:none; 
+	padding:0px; 
+	font-family: "Montserrat";
+	font-weight: 200; 
+}
+
+.footer-bs .footer-nav ul.list li {
+	padding: 0px; 
+	padding-left: 10px; 
+	margin: 0;
+}
+
+.footer-bs .footer-nav ul.list a { 
+	font-family: "Montserrat"; 
+	font-size: 11px; 
+	color:rgb(255, 255, 255); 
+	text-transform: uppercase; 
+	font-weight:200 
+}
+
+.footer-bs .footer-nav ul.list a:hover { 
+	color:#C59D5F; 
+	text-decoration:none; 
+}
+
+.footer-bs li { 
+	padding:5px 4px;
+}
+
+.footer-bs a { 
+	color:rgba(255,255,255,1.00);
+}
+
+.footer-bs a:hover { 
+	color:#C59D5F;
+	text-decoration:none; 
+}
+
+.btn-footer {
+	background-color: #9B6D37;
+	color: #FFFFFF;
+	border: 2px solid #9B6D37;
+	font-family: "Montserrat";
+	font-weight: 300;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.btn-footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.btn-footer:hover {
+	background-color: #9b6c37b7;
+	border: 2px solid #9b6c37b7;
+}
+
+.btn-footer a:hover {
+	color: #FFFFFF;
+}
+
+.footer-bs p {
+	font-size: 9px; 
+	color: rgba(255, 255, 255, 0.993); 
+	font-weight: 200; 
+	letter-spacing: 0.05rem; 
+}
+
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+.mg-footer {
+	font-family: "Butler";
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	font-weight: 400;
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+
+.fa-map-marker-alt .fa-phone { 
+	padding-left: 10px;
+}
+
+.footer-brand {
+	padding-top: 2px;
+}
+
+.redes-news a{
+	padding-left: 8px;
+	color: #FFFFFF;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.redes-news a:hover {
+	color: #C59D5F;
+}
+
+.footer-ns p {
+	font-family: "Montserrat";
+	font-size: 11px;
+	font-weight: 200;
+	letter-spacing: 0.04rem;
+	padding-top: 5px;
+}
+
+/*TEXT*/
+
+h1 {
+	color: #FFFFFF ;
+	font-family: "Butler";
+	font-size: 60px;
+}
+
+.frase-index {
+	margin-bottom: 50px;
+}
+
+
+.main-text {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: 0.08em;
+	color: #3a3a3a;
+}
+
+
+
+/*BUTTONS*/
+
+.frase-index button {
+	background-color:transparent;
+	font-family: "Montserrat";
+	font-weight: 400;
+	text-align: center;
+	color: #FFFFFF;
+	width: 130px;
+	height: 30px;
+	border: 1.5px solid #FFFFFF;
+	position: absolute;
+	right: 70px;
+}
+
+.newsletter button {
+	background-color: #FFFFFF;
+	font-family: Montserrat;
+	color: #000000;
+	border: 2px solid #FFFFFF ;
+}
+
+button a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*HOVERS ANIMATIONS*/
+
+.frase-index button:hover {
+	background-color: #9B6D37;
+	color:#FFFFFF;
+	border: none;
+}
+
+h1 { /*ANIMACION H1 INDEX*/
+	animation:animate__fadeInDown;
+	animation-iteration-count: inherit;
+	animation-timing-function: ease;
+	animation-duration: 3s;
+	animation-delay: 0;
+}
+
+@keyframe animate__fadeInDown {
+	0%{opacity: 0px};
+	100%{opacity: 100px};
+}
+
+
+.frase-index button {
+	animation:animate__fadeInUp;
+	animation-iteration-count: inherit;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+	animation-delay: 0;
+}
+
+@keyframe animate__fadeInUp {
+	0%{opacity: 0px};
+	100%{opacity: 100px};
+}
+
+h1 { /*H1 TODAS LAS SECCIONES*/
+	animation: animate__slideInDown;
+	animation-iteration-count: inherit;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+	animation-delay: 0;
+}
+
+@keyframe animate__slideInDown {
+	0%{opacity: 0px};
+	50% {opacity: 50px}
+	100%{opacity: 100px};
+}
+
+p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
+	animation: animate__fadeIn;
+	animation-iteration-count: initial;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+	animation-delay: 0;
+}
+
+@keyframe animate__fadeIn {
+	0%{opacity: 0px};
+	50% {opacity: 50px}
+	100%{opacity: 100px};
+}
+
+.testimonios1 { /*NO FUNCIONA*/
+	animation:animate__fadeInDown;
+	animation-iteration-count: inherit;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+	animation-delay: 0;
+}
+
+@keyframe animate__fadeInDown {
+	0%{opacity: 0px};
+	100%{opacity: 100px};
+}
+
+/*SECCION EVENTOS*/
+
+.frase-principal-eventos h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-eventos p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+/*SECCION CATERING*/
+
+.frase-principal-catering h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-catering p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#container-catering {
+	border: 1px solid #000000;
+}
+
+
+.intro-catering {
+	grid-column: 1/6;
+	height: 150px;
+	background-color: #f3ece6;
+	color: rgb(102, 102, 102);
+	text-align: center;
+}
+
+p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCROLL*/
+	animation: animate__fadeIn;
+	animation-iteration-count: inherit;
+	animation-timing-function: ease;
+	animation-duration: 3s;
+	animation-delay: 1s;
+}
+
+@keyframe animate__fadeIn {
+	0%{opacity: 0px};
+	20%{opacity: 20px};
+	50% {opacity: 50px};
+	80%{opacity: 80px};
+	100%{opacity: 100px};
+}
+
+.explicacion {
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	padding-top: 15px;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+}
+
+.criollo { /*MENU*/
+	grid-column:4;
+	grid-row: 2;
+	text-align: center;
+	align-self: center;
+}
+
+
+.criollo h2 {
+	font-size: 30px;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.criollo p {
+	font-family: "Montserrat";
+	font-size: 11px;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.grid-catering button a{ /*BOTONES*/
+	color: #9B6D37;
+	font-family: "Butler";
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.grid-catering button {
+	background-color: transparent;
+	border: none;
+}
+
+.hover-border {
+    font-family: "Butler";
+	text-decoration: none;
+	text-align: center;
+    position: relative;
+    color: #3A3A3A;
+}
+ 
+.hover-border::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #9B6D37;
+    position: absolute;
+    bottom: 0%; left: 50%;
+    border-radius: 2px;
+    transition: all 500ms ease;
+}
+ 
+.hover-border:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+.italiano { /*MENU*/
+	text-align: center;
+	align-self: center;
+}
+
+.italiano h2 {
+	font-size: 30px;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.italiano p {
+	font-family: "Montserrat";
+	font-size: 11px;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.tradicional { /*MENU*/
+	text-align: center;
+	align-self: center;
+}
+
+.tradicional h2 {
+	font-size: 30px;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.tradicional p {
+	font-family: "Montserrat";
+	font-size: 11px;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.pizza-party { /*MENU*/
+	text-align: center;
+	align-self: center;
+}
+
+.pizza-party h2 {
+	font-size: 30px;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.pizza-party p {
+	font-family: "Montserrat";
+	font-size: 11px;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+
+
+/*SECCION SERVICIOS*/
+
+.frase-principal-servicios h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-servicios p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+
+
+/*SECCION GALERIA*/
+
+.frase-principal-galeria h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-galeria p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  .column {
+	flex: 25%;
+	max-width: 33.3%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s linear;
+  }
+  .column img:hover {
+	filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+	.column img {
+	  filter: grayscale(0) brightness(1);
+	}
+  }
+
+/* SECCION CONTACTO*/
+
+.frase-principal-contacto h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-contacto p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.info-contacto {
+	background-color: #f3f3f3;
+	color: #3A3A3A;
+	padding-left: 0;
+	padding: 50px;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.04rem;
+}
+
+.datos-contacto {
+	margin: 10px;
+}
+
+.datos-contacto h3 {
+	font-family: "Butler";
+	font-size: 16px;
+}
+
+.redes a {
+	color: #3A3A3A;
+}
+
+.info-form p {
+	letter-spacing: 0.04rem;
+	padding-bottom: 10px;
+}
+
+.formulario {
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.04rem;
+}
+
+.formulario h2 {
+	font-family: "Butler";
+	font-size: 30px;
+	color: #9B6D37;
+}
+
+.nombres, .telefono, .mail, .evento, .cantidad, .fecha, .conocer {
+	padding-bottom: 10px;
+}
+
+.formulario input {
+	border: 0;
+	background-color: transparent;
+	border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.formulario input:focus {
+	outline: 0;
+	border-color: #9B6D37;
+	border-bottom: 1px solid #9B6D37;
+}
+
+.formulario button {
+	border: 1px solid  rgb(117, 117, 117);
+	background-color: transparent;
+	cursor: pointer;
+	font-family: "Montserrat";
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
+	font-weight: 300;
+}
+
+.enviar-contacto {
+	margin-left: 10px;
+}
+
+.formulario button:hover {
+	border: 1px solid #9B6D37;
+	background-color: #9B6D37;
+	color: #F5F5F5;
+
+}
+
+.mapa {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*SECCION QUIENES SOMOS*/
+
+.frase-principal-quienes h1 {
+	color: #FFFFFF ;
+	font-family: butler;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 280px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.frase-principal-quienes p {
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 0px;
+}
