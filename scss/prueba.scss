@@ -10,7 +10,7 @@ $light-grey: #f3f3f3;
 body {
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	font-family:"Montserrat";
 	color: $primary-grey;
 	position: relative;
@@ -21,55 +21,66 @@ body {
     src: url("/font/butler")
 }
 
+
 .contenedor-eventos { /*Seccion Eventos*/
 	background-image: url("../images/imagen-principal-eventos.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
 .contenedor-catering { /*Seccion Catering*/
 	background-image: url("../images/imagen-principal-catering.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
 .contenedor-servicios { /*Seccion Servicios*/
 	background-image: url("../images/imagen-principal-servicios3.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
 .contenedor-galeria { /*Seccion Galería*/
 	background-image: url("../images/imagen-principal-galeria.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
 .contenedor-contacto { /*Seccion Ubicacion-Contacto*/
 	background-image: url("../images/imagen-principal-contacto2.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
 .contenedor-quienes-somos { /*Seccion Quienes Somos*/
 	background-image: url("../images/imagen-principal-quienessomos.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-    height: 100vh;
+	height: 100vh;
+	display: flex;
 }
 
-.contenedor-flex {
+
+/*.contenedor-flex {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 70px;
- /*   position: relative;*/
-}
+	position: relative;
+	@media screen and (max-width: 768px){
+		background-color: $primary-color;
+	}
+}*/
 
 
 /*NAVBAR*/
@@ -82,6 +93,32 @@ body {
 	margin-top: 20px;
 	padding-left: 30px;
 	transition: top 0.3s;
+	position: absolute;
+	z-index: 1;
+	@media screen and (max-width: 768px){
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navbar,.navbar-brand,.nav-container,.navbar-dark,.navbar-toggler,.navbar-collapse{
+		background-color: black;
+	}
+	.navbar-toggler:hover {
+		border: 4px solid white;
+	}
+
+	.navbar-collapse {
+		ul{
+			li{
+				a{
+					align-items: center;
+				}
+			}
+		}
+	}
 }
 
 .navbar-nav {
@@ -91,31 +128,38 @@ body {
     }
 }
 
-.navbar-brand img {
-    padding-left: 20px;
+.navbar-brand {
+	img {
+	padding-left: 20px;
+	max-width: 90%;
+	
+	}
 }
 
+@media screen and (max-width: 768px) {
+	.navbar-brand {
+		img{
+			max-width: 60%;
+		}
+	}
+	.navbar-toggler-icon, .navbar-toggler {
+		max-width: 70%;
+	}
+	.navbar-toggler-icon {
+		color: white;
+	}
+}
+
+
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+	color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: $light;
+	color: $light;
 }
 
-
- 
-
-/*CAROUSEL*/
-
-.carousel-item {
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-	backface-visibility: visible;
-  }
 
 /*SECTION 1 - MG MAIN*/
 
@@ -125,12 +169,21 @@ body {
 	background-repeat: no-repeat;
 	background-position-x: center;
 	height: 400px;
+	@media screen and (max-width: 768px){
+		height: 500px;
+	}
 }
 
 .one-section h3 {
 	font-family: $title-font;
 	font-size: 40px;
 	color: $secondary-color;
+	@media screen and (max-width: 1023px){
+		font-size: 50px;
+	}
+	@media screen and (max-width: 768px){
+		font-size: 50px;
+	}
 }
 
 .subtitulo-mg {
@@ -139,6 +192,12 @@ body {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
+	@media screen and (max-width: 1023px){
+		font-size: 18px;
+	}
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+	}
 }
 
 
@@ -153,8 +212,15 @@ body {
 	    font-family: $text-font;
 	    font-size: 14px;
 	    font-weight: 200;
-	    letter-spacing: 0.08em;
-    }
+		letter-spacing: 0.08em;
+		@media screen and (max-width: 768px){
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+	@media screen and (max-width: 768px){
+		width: 25%;
+	}
 }
 
 .conocenos-1:hover {
@@ -164,7 +230,7 @@ body {
     a:hover {
 	    color: white;
 	    text-decoration: none;
-    }
+	}
 }
 
 /*SECTION 2 - SLIDES IMAGES MAIN*/
@@ -187,8 +253,29 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 1px #2d2d2d;
+	overflow: hidden;
+	@media screen and (max-width: 1023px){
+		height: 80%;
+	}
+	@media screen and (max-width: 992px){
+		height: 80%;
+	}
+	@media screen and (max-width: 768px){
+		height: 70%;
+	}
  }
 
+ .images-2 {
+	@media screen and (max-width: 992px){
+		/*border: 2px solid red;*/
+		margin-top: 40px;
+	}
+	@media screen and (max-width: 768px){
+		/*border: 2px solid red;*/
+		margin-top: 80px;
+	}
+ }
 
 /*SECTION 3 - ICONS*/
 
@@ -210,6 +297,11 @@ body {
 	font-weight: 300;
 	padding-top: 5px;
 	color: $light-grey;
+	@media screen and (max-width: 768px){
+		font-size: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
 
 .texto-calidez,
@@ -220,6 +312,16 @@ body {
 	font-weight: 200;
 	font-size: 14px;
 	color: $light-grey;
+	@media screen and (max-width: 992px){
+		font-size: 16px;
+		line-height: 1.4em;
+		padding-top: 5px;
+	}
+	@media screen and (max-width: 768px){
+		font-size: 18px;
+		line-height: 1.4em;
+		padding-top: 5px;
+	}
 }
 
 
@@ -241,19 +343,10 @@ body {
 
 
 /*SECTION 4 - SERVICES*/
-.services-index {
-	height: 700px;
-	/*background-color: #E9E9E9;*/
-	display: flex;
-  	justify-content: space-between;
+/*.services-index {
+	background-color: #E9E9E9;
 }
 
-
-.img-services {
-	height: 600px;
-	object-fit: cover;
-	background-position-x: center;
-}
 
 .text-services {
     h4 {
@@ -279,16 +372,18 @@ body {
 }
 
 .btn-services {
+	color: $primary-grey;
 	border: 1px solid $secondary-color;
+	font-family: $text-font;
+	font-size: 14px;
+	font-weight: 300;
 	background-color: transparent;
 	border-radius: 0;
-	height: 8%;
-	width: 25%;
     a {
-	    color:$secondary-color;
+	    color: $primary-color;
 	    font-family: $text-font;
 	    font-size: 14px;
-	    font-weight: 300;
+	    font-weight: 200;
 	    letter-spacing: 0.08em;
     }
     a:hover {
@@ -301,7 +396,7 @@ body {
 .btn-services:hover {
 	background-color: $secondary-color;
 	border: 1px solid $secondary-color;
-}
+}*/
 
 
 /*SECTION- IMAGENES MAIN*/
@@ -346,7 +441,7 @@ body {
 	float: left;
 	width: 50%;
   }
-  @media screen and (max-width: 640px){
+  @media screen and (max-width: 728px){
 	.container-ev{
 	  display: block;
 	  width: 100%;
@@ -363,14 +458,21 @@ body {
     h4 {
 	    font-family: $title-font;
 	    font-size: 36px;
-	    color: $secondary-color;
-        }
-        p {
+		color: $secondary-color;
+		@media screen and (max-width: 1023px){
+			font-size: 40px;
+		
+		  }
+    }
+    p {
 	    font-family: $text-font;
 	    font-size: 14px;
 	    font-weight: 200;
 	    letter-spacing: 0.08em;
-	    color: $primary-grey;
+		color: $primary-grey;
+		@media screen and (max-width: 1023px){
+			font-size: 18px;
+		}
     }
 }  
   .content {
@@ -388,6 +490,10 @@ body {
 	font-weight: 400;
 	color: white;
 	position: absolute;
+	@media screen and (max-width: 1023px){
+		font-size: 35px;
+	
+	  }
 }
 
 
@@ -405,14 +511,37 @@ body {
 	top: 45%;
 	left: 35%;
 }
-@media screen and (max-width: 640px){
-	.corp, .even, .soc {
-		font-size: 15px;
+
+@media screen and (max-width: 1023px){
+	.corp {
+		left: 12%;
+	}
+	.even, .soc {
+		left: 28%;
 
 	}
   }
 
-  
+@media screen and (max-width: 992px){
+	.corp {
+		left: 5%;
+	}
+	.even, .soc {
+		left: 24%;
+
+	}
+  }
+
+@media screen and (max-width: 728px){
+	.corp {
+		left: 10%;
+	}
+	.even, .soc {
+		left: 28%;
+
+	}
+  }
+
   .content .content-overlay {
 	background: rgba(151, 124, 73, 0.966);
 	position: absolute;
@@ -510,8 +639,12 @@ body {
 	    color: #FFFFFF;
     } 
     p {
-	    font-family: &$text-font;
-	    font-weight: 200;
+	    font-family: $text-font;
+		font-weight: 200;
+		font-size: 1rem;
+		@media screen and (max-width: 768px){
+			font-size: 1.15rem;
+		}
     }
 }
 
@@ -533,14 +666,76 @@ body {
 	border-color: white;
 }
 
+@media screen and (max-width: 1023px){
+	.hero-text {
+		width: 80%;
+		h3 {
+			font-family: $title-font;
+			font-size: 44px;
+			color: #FFFFFF;
+			padding-bottom: 10px;
+		} 
+		p {
+			font-size: 1.35rem;
+		}
+	}
+}
+
+@media screen and (max-width: 992px){
+	.hero-text {
+		width: 80%;
+		h3 {
+			font-family: $title-font;
+			font-size: 44px;
+			color: #FFFFFF;
+			padding-bottom: 10px;
+		} 
+		p {
+			font-size: 1.35rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.hero-text {
+		width: 90%;
+		h3 {
+			font-family: $title-font;
+			font-size: 40px;
+			color: #FFFFFF;
+			padding-bottom: 10px;
+		} 
+	}
+
+	#slides {
+		width: 768px;
+	}
+	.hero-image {
+		max-width: 768px;
+	}
+}  
 
 /*SECTION 7 - TESTIMONIOS*/
 
+.testimonios{
+	@media screen and (max-width: 768px){
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+	}
+}
+
 .titulo-test {
 	font-family: $title-font;
-	font-size: 35px;
+	font-size: 38px;
 	color: $secondary-color;
 	text-align: center;
+	@media screen and (max-width: 1023px){
+		font-size: 42px;
+	}
+
+	@media screen and (max-width: 768px){
+		font-size: 35px;
+	}
 }
 
 .texto-test {
@@ -549,6 +744,13 @@ body {
 	font-weight: 300;
 	letter-spacing: 0.08em;
 	color: $primary-grey;
+	@media screen and (max-width: 1023px){
+		font-size: 18px;
+	}
+	@media screen and (max-width: 768px){
+		margin-bottom: 0;
+		font-size: 16px;
+	}
 }
 
 .icon-test {
@@ -562,10 +764,21 @@ body {
     letter-spacing: 0.08em;
     line-height: 1.5rem;
 	color: $primary-grey;
+	@media screen and (max-width: 1023px){
+		font-size: 20px;
+		line-height: 2rem;
+	}
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+		line-height: 1.7rem;
+	}
 }
 
 .line-test {
-    width: 10%;
+	width: 10%;
+	@media screen and (max-width: 768px){
+		display: none;
+	}
 }
 
 .susana,
@@ -575,7 +788,10 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: $primary-grey;
+	color: $primary-grey;
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+	}
 }
 
 .testimonios-dire {
@@ -583,6 +799,9 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 0.05em;
+	@media screen and (max-width: 768px){
+		font-size: 18px;
+	}
 }
 
 .icon-next {
@@ -629,18 +848,7 @@ body {
 }  
 
 
-@media (min-width: 992px) {
-	.gracias-text h3 { 
-		font-family: $title-font;
-		font-size: 80px;
-		font-weight: 400;
-		letter-spacing: 0.03em;
-		line-height: 1em;
-	}
-}
-
-
-@media (max-width: 992px) {
+@media screen and (max-width: 1023px) {
 	.gracias-text h3 { 
 		font-family: $title-font;
 		font-size: 60px;
@@ -650,10 +858,39 @@ body {
 	}
 }
 
+
+@media screen and (max-width: 992px) {
+	.gracias-text h3 { 
+		font-family: $title-font;
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+	}
+}
+
+
+@media screen and (max-width: 728px) {
+	.gracias-text h3 { 
+		font-family: $title-font;
+		font-size: 46px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+		padding-top: 20px;
+	}
+}
+
 .gracias-img {
 	background-image: url("../images/gracias.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	
+	@media screen and (max-width: 728px) {
+		background-size: cover;
+		background-position: right;
+	}
+
 }
 
 
@@ -895,12 +1132,36 @@ h1 {
 	color: white;
 	font-family: $title-font;
 	font-size: 60px;
+	@media screen and (max-width: 992px){
+		font-size: 40;
+		margin-top: 80px;
+	}
 }
 
 .frase-index {
 	margin-bottom: 50px;
 }
 
+.carousel-frase {
+	button{
+		@media screen and (max-width: 992px){
+			display: none;
+	
+		}
+		@media screen and (max-width: 1023px){
+			display: none;
+		}
+	}
+	h1 {
+		@media screen and (max-width: 992px){
+			font-size: 40px;
+			display: none;
+		}
+		@media screen and (max-width: 1023px){
+			display: none;
+		}
+	}
+}
 
 .main-text {
 	font-family: $text-font;
@@ -908,6 +1169,10 @@ h1 {
 	font-weight: 200;
 	letter-spacing: 0.08em;
 	color:$primary-grey;
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+		font-weight: 300;
+	}
 }
 
 
@@ -952,7 +1217,7 @@ h1 { /*ANIMACION H1 INDEX*/
 	animation-delay: 0;
 }
 
-@keyframe animate__fadeInDown {
+@keyframes animate__fadeInDown {
 	0%{opacity: 0px};
 	100%{opacity: 100px};
 }
@@ -966,7 +1231,7 @@ h1 { /*ANIMACION H1 INDEX*/
 	animation-delay: 0;
 }
 
-@keyframe animate__fadeInUp {
+@keyframes animate__fadeInUp {
 	0%{opacity: 0px};
 	100%{opacity: 100px};
 }
@@ -979,7 +1244,7 @@ h1 { /*H1 TODAS LAS SECCIONES*/
 	animation-delay: 0;
 }
 
-@keyframe animate__slideInDown {
+@keyframes animate__slideInDown {
 	0%{opacity: 0px};
 	50% {opacity: 50px}
 	100%{opacity: 100px};
@@ -993,7 +1258,7 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	animation-delay: 0;
 }
 
-@keyframe animate__fadeIn {
+@keyframes animate__fadeIn {
 	0%{opacity: 0px};
 	50% {opacity: 50px}
 	100%{opacity: 100px};
@@ -1007,12 +1272,27 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	animation-delay: 0;
 }
 
-@keyframe animate__fadeInDown {
+@keyframes animate__fadeInDown {
 	0%{opacity: 0px};
 	100%{opacity: 100px};
 }
 
 /*SECCION EVENTOS*/
+
+.contenedor-eventos {
+	@media screen and (max-width: 1023px){
+		height: 500px;
+	}
+	@media screen and (max-width: 992px){
+		height: 500px;
+	}
+	@media screen and (max-width: 728px){
+		height: 400px;
+	}
+	@media screen and (max-width: 480px){
+		height: 200px;
+	}
+}
 
 .frase-principal-eventos { 
     h1 {
@@ -1022,7 +1302,30 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    text-align: center;
 	    margin-top: 280px;
 	    margin-bottom: 15px;
-	    width: 100%;
+		width: 100%;
+		@media screen and (max-width: 1023px){
+			margin-top: 200px;
+			font-size: 70px;
+			margin-bottom: 8px;
+		}
+		
+		@media screen and (max-width: 992px){
+			margin-top: 200px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 728px){
+			margin-top: 85px;
+			font-size: 60px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 480px){
+			margin-top: 50px;
+			font-size: 40px;
+			margin-bottom: 6px;
+		}
     }
 
     p {
@@ -1033,19 +1336,40 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    letter-spacing: 1.5px;
 	    text-align: center;
 	    margin-top: 0px;
-    }
+	}
+	
+	.fa-angle-down {
+		@media screen and (max-width: 728px){
+			display: none;
+		}
+	}
 }
 
 .info-ev {
     h2 {
         font-family: $title-font;
         color: $secondary-color;
-        font-size: 30px;
+		font-size: 30px;
+		@media screen and (max-width: 992px){
+			font-size: 50px;
+			padding-bottom: 20px;
+		}
     }
     p {
         font-family: $text-font;
         font-weight: 200;
-        font-size: 16px;
+		font-size: 16px;
+		letter-spacing: 0.08rem;
+		@media screen and (max-width: 992px){
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.8rem;
+		}
+		@media screen and (max-width: 728px){
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1.6rem;
+		}
     }
 }
 
@@ -1059,6 +1383,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	font-weight: 200;
 	letter-spacing: 0.12rem;
 	color: white;
+	@media screen and (max-width: 728px){
+		font-size: 24px;
+	}
 }
 
 
@@ -1083,6 +1410,17 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
     position: absolute;
     top: 20%;
 	left: 15%;
+	p{
+		@media screen and (max-width: 728px){
+			font-size: 60px;
+			left: 10%;
+			top: 10%;
+		}
+	}
+	@media screen and (max-width: 992px){
+		font-size: 30px;
+		left: 10%;
+	}
 }
 
 .name-section {
@@ -1092,7 +1430,11 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	letter-spacing: 0.04rem;
     position: absolute;
     top: 10%;
-    left: 15%;
+	left: 15%;
+	@media screen and (max-width: 728px){
+		font-size: 20px;
+		left: 10%;
+	}
 }
 
 .section-3 {
@@ -1104,20 +1446,66 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
     h2 {
         font-family: $title-font;
         font-size: 40px;
-        color: $secondary-color;
+		color: $secondary-color;
+		@media screen and (max-width: 728px){
+			font-size: 55px;
+		}
     }
     p {
         font-family: $text-font;
         font-weight: 300;
         font-size: 16px;
-        letter-spacing: 0.04rem;
+		letter-spacing: 0.04rem;
+		@media screen and (max-width: 728px){
+			font-size: 17px;
+		}
     }
     hr {
         width: 5%;
     }
 }
 
+.gallery-soc {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	justify-items: center;
+	grid-gap: 0;
+	margin-bottom: 50px;
+	  
+	.item {
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+	}    
+  	img {
+		opacity: 0.6;
+		width: 100%;
+		height: 100%;
+		transform: scale(1.15);
+		transition: transform 0.5s, opacity 0.5s;
+	} 
+  	img:hover {
+		opacity: 1;
+		transform: scale(1.03)
+	}
+}
 /*SECCION CATERING*/
+
+
+.contenedor-catering {
+	@media screen and (max-width: 1023px){
+		height: 500px;
+	}
+	@media screen and (max-width: 992px){
+		height: 500px;
+	}
+	@media screen and (max-width: 728px){
+		height: 300px;
+	}
+	@media screen and (max-width: 480px){
+		height: 300px;
+	}
+}
 
 .frase-principal-catering { 
     h1 {
@@ -1127,7 +1515,30 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    text-align: center;
 	    margin-top: 280px;
 	    margin-bottom: 15px;
-	    width: 100%;
+		width: 100%;
+		@media screen and (max-width: 1023px){
+			margin-top: 220px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 992px){
+			margin-top: 250px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+		
+		@media screen and (max-width: 728px){
+			margin-top: 85px;
+			font-size: 60px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 480px){
+			margin-top: 100px;
+			font-size: 40px;
+			margin-bottom: 6px;
+		}
     }
 
     p {
@@ -1138,7 +1549,13 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    letter-spacing: 1.5px;
 	    text-align: center;
 	    margin-top: 0px;
-    }
+	}
+	
+	.fa-angle-down {
+		@media screen and (max-width: 728px){
+			display: none;
+		}
+	}
 }
 
 
@@ -1150,7 +1567,7 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	animation-delay: 1s;
 }
 
-@keyframe animate__fadeIn {
+@keyframes animate__fadeIn {
 	0%{opacity: 0px};
 	20%{opacity: 20px};
 	50% {opacity: 50px};
@@ -1161,7 +1578,7 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 .jumbotron{
     background-color: $secondary-color;
     border-radius: 0;
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .explicacion {
@@ -1341,6 +1758,21 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 
 /*SECCION SERVICIOS*/
 
+.contenedor-servicios {
+	@media screen and (max-width: 1023px){
+		height: 500px;
+	}
+	@media screen and (max-width: 992px){
+		height: 500px;
+	}
+	@media screen and (max-width: 728px){
+		height: 400px;
+	}
+	@media screen and (max-width: 480px){
+		height: 300px;
+	}
+}
+
 .frase-principal-servicios {
     h1 {
 	    color: white ;
@@ -1349,7 +1781,30 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    text-align: center;
 	    margin-top: 280px;
 	    margin-bottom: 15px;
-	    width: 100%;
+		width: 100%;
+		@media screen and (max-width: 1023px){
+			margin-top: 220px;
+			font-size: 70px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 992px){
+			margin-top: 220px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+		
+		@media screen and (max-width: 728px){
+			margin-top: 125px;
+			font-size: 60px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 480px){
+			margin-top: 80px;
+			font-size: 40px;
+			margin-bottom: 6px;
+		}
     }
 
     p {
@@ -1360,7 +1815,13 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    letter-spacing: 1.5px;
 	    text-align: center;
 	    margin-top: 0px;
-    }
+	}
+	
+	.fa-angle-down {
+		@media screen and (max-width: 728px){
+			display: none;
+		}
+	}
 }
 
 .fa-angle-down {
@@ -1374,8 +1835,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    font-size: 20px;
 	    font-weight: 200;
 	    letter-spacing: 0.08rem;
-	    padding-top: 10px;
-    }
+		padding-top: 10px;	
+	}
+
 }
 
 .serv-name {
@@ -1404,8 +1866,41 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	width: 20px;
 }
 
+.details-serv {
+	h5{
+		font-family: $text-font;
+		font-weight: 300;
+		color: $secondary-color;
+		font-size: 18px;
+		letter-spacing: 0.08rem;
+	}
+	
+	h3{
+		font-family: $title-font;
+		color: $primary-color;
+	}
+	p {
+		font-weight: 300;
+	}
+}
 
 /*SECCION GALERIA*/
+
+
+.contenedor-galeria {
+	@media screen and (max-width:1023px){
+		height: 500px;
+	}
+	@media screen and (max-width: 992px){
+		height: 500px;
+	}
+	@media screen and (max-width: 728px){
+		height: 400px;
+	}
+	@media screen and (max-width: 480px){
+		height: 250px;
+	}
+}
 
 .frase-principal-galeria {
     h1 {
@@ -1415,7 +1910,29 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    text-align: center;
 	    margin-top: 280px;
 	    margin-bottom: 15px;
-        width: 100%;
+		width: 100%;
+		@media screen and (max-width: 1023px){
+			margin-top: 220px;
+			font-size: 70px;
+			margin-bottom: 8px;
+		}
+		@media screen and (max-width: 992px){
+			margin-top: 220px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 728px){
+			margin-top: 125px;
+			font-size: 60px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 480px){
+			margin-top: 80px;
+			font-size: 40px;
+			margin-bottom: 6px;
+		}
     }
     
     p {
@@ -1426,7 +1943,13 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    letter-spacing: 1.5px;
 	    text-align: center;
 	    margin-top: 0px;
-    }
+	}
+	
+	.fa-angle-down {
+		@media screen and (max-width: 728px){
+			display: none;
+		}
+	}
 }
 
 .row {
@@ -1472,6 +1995,28 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 
 /* SECCION CONTACTO*/
 
+.contenedor-contacto {
+	@media screen and (max-width: 1023px){
+		height: 500px;
+	}
+	@media screen and (max-width: 992px){
+		height: 500px;
+	}
+	@media screen and (max-width: 728px){
+		height: 400px;
+	}
+	@media screen and (max-width: 480px){
+		height: 300px;
+	}
+}
+
+.contact-section{
+	@media screen and (max-width: 480px){
+		padding-top: 2px;
+		margin-top: 0;
+	}
+}
+
 .frase-principal-contacto {
     h1 {
 	    color: white ;
@@ -1480,7 +2025,29 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    text-align: center;
 	    margin-top: 280px;
 	    margin-bottom: 15px;
-	    width: 100%;
+		width: 100%;
+		@media screen and (max-width: 1023px){
+			margin-top: 220px;
+			font-size: 70px;
+			margin-bottom: 8px;
+		}
+		@media screen and (max-width: 992px){
+			margin-top: 220px;
+			font-size: 65px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 728px){
+			margin-top: 120px;
+			font-size: 60px;
+			margin-bottom: 8px;
+		}
+
+		@media screen and (max-width: 480px){
+			margin-top: 100px;
+			font-size: 40px;
+			margin-bottom: 6px;
+		}
     }
     
     p {
@@ -1490,8 +2057,23 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    font-weight: 300;
 	    letter-spacing: 1.5px;
 	    text-align: center;
-	    margin-top: 0px;
-    }
+		margin-top: 0px;
+		
+		@media screen and (max-width: 728px){
+			font-size: 14px;
+			margin-bottom: 0px;
+		}
+		@media screen and (max-width: 480px){
+			font-size:10px;
+			margin-bottom: 0px;
+		}
+	}
+
+	.fa-angle-down{ 
+		@media screen and (max-width: 728px){
+			display: none;
+		}
+	}
 }
 
 .info-contacto {
@@ -1503,6 +2085,10 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	font-size: 12px;
 	font-weight: 300;
 	letter-spacing: 0.04rem;
+
+	@media screen and (max-width: 728px){
+		padding-top: 0px;
+	}
 }
 
 .datos-contacto {
@@ -1511,7 +2097,16 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
     h3 {
 	font-family: $title-font;
 	font-size: 16px;
-    }
+		@media screen and (max-width: 728px){
+			font-size: 20px;
+		}
+	}
+	p {
+		@media screen and (max-width: 728px){
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
 }
 
 .redes {
@@ -1523,7 +2118,10 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 .info-form {
     p {
     	letter-spacing: 0.04rem;
-    	padding-bottom: 10px;
+		padding-bottom: 10px;
+		@media screen and (max-width: 728px){
+			font-size: 16px;
+		}
     }
 }
 
@@ -1532,11 +2130,16 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0.04rem;
-    
+    @media screen and (max-width: 728px){
+		font-size: 16px;
+	}
     h2 {
 	    font-family: $title-font;
 	    font-size: 30px;
-	    color: $primary-color;
+		color: $primary-color;
+		@media screen and (max-width: 728px){
+			font-size:38px;
+		}
     }
 
     button {
@@ -1567,7 +2170,15 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
         outline: 0;
         border-color: $primary-color;
         border-bottom: 1px solid $primary-color;
-    }
+	}
+	
+	@media screen and (max-width: 728px){
+		padding: 2px;
+	}
+
+	@media screen and (max-width: 480px){
+		padding: 2px;
+	}
 }
 
 .nombres, .telefono, .mail, .evento, .cantidad, .fecha, .conocer {
