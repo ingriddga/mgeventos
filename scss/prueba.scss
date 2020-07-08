@@ -182,7 +182,10 @@ body {
 		font-size: 50px;
 	}
 	@media screen and (max-width: 768px){
-		font-size: 50px;
+		font-size: 35px;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 30px;
 	}
 }
 
@@ -196,7 +199,10 @@ body {
 		font-size: 18px;
 	}
 	@media screen and (max-width: 768px){
-		font-size: 16px;
+		font-size: 14px;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 12px;
 	}
 }
 
@@ -217,9 +223,16 @@ body {
 			font-size: 16px;
 			font-weight: 300;
 		}
+		@media screen and (max-width: 576px){
+			font-size: 14px;
+			font-weight: 300;
+		}
 	}
 	@media screen and (max-width: 768px){
 		width: 25%;
+	}
+	@media screen and (max-width: 576px){
+		width: 30%;
 	}
 }
 
@@ -461,8 +474,10 @@ body {
 		color: $secondary-color;
 		@media screen and (max-width: 1023px){
 			font-size: 40px;
-		
-		  }
+		}
+		@media screen and (max-width: 576px){
+			font-size: 35px;
+		}
     }
     p {
 	    font-family: $text-font;
@@ -472,6 +487,9 @@ body {
 		color: $primary-grey;
 		@media screen and (max-width: 1023px){
 			font-size: 18px;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 16px;
 		}
     }
 }  
@@ -493,7 +511,18 @@ body {
 	@media screen and (max-width: 1023px){
 		font-size: 35px;
 	
-	  }
+	}
+	@media screen and (max-width: 576px){
+		font-size: 28px;
+	
+	}
+}
+
+.corp {
+	@media screen and (max-width:576px){
+		font-size: 25px;
+	
+	}
 }
 
 
@@ -538,6 +567,16 @@ body {
 	}
 	.even, .soc {
 		left: 28%;
+
+	}
+}
+
+@media screen and (max-width: 576px){
+	.corp {
+		left: 5%;
+	}
+	.even, .soc {
+		left: 20%;
 
 	}
   }
@@ -645,6 +684,9 @@ body {
 		@media screen and (max-width: 768px){
 			font-size: 1.15rem;
 		}
+		@media screen and (max-width: 576px){
+			font-size: 1rem;
+		}
     }
 }
 
@@ -714,6 +756,17 @@ body {
 		max-width: 768px;
 	}
 }  
+
+@media screen and (max-width: 576px){
+	.hero-text {
+		width: 80%;
+		h3{
+			font-size: 32px;
+			padding-bottom: 8px;
+		}
+	}
+
+}
 
 /*SECTION 7 - TESTIMONIOS*/
 
@@ -823,6 +876,9 @@ body {
     height: 500px;
     margin-top: 20px;
 	background-color: $secondary-color;
+	@media screen and (max-width: 576px){
+		height: 600px;
+	}
 }
 
 .gracias-text {
@@ -844,7 +900,12 @@ body {
         font-weight: 200;
         letter-spacing: 0.08em;
         color: white;
-    }
+	}
+	@media screen and (max-width: 576px){
+		height: 300px;
+		padding-top: 0px;
+		margin-top: 2px;	
+	}
 }  
 
 
@@ -881,6 +942,17 @@ body {
 	}
 }
 
+@media screen and (max-width: 576px) {
+	.gracias-text h3 { 
+		font-family: $title-font;
+		font-size: 46px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+		padding-top: 0px;
+	}
+}
+
 .gracias-img {
 	background-image: url("../images/gracias.jpg");
 	background-repeat: no-repeat;
@@ -889,6 +961,11 @@ body {
 	@media screen and (max-width: 728px) {
 		background-size: cover;
 		background-position: right;
+	}
+	@media screen and (max-width: 576px) {
+		background-size: cover;
+		background-position: top;
+		height: 200px;
 	}
 
 }
@@ -1173,6 +1250,10 @@ h1 {
 		font-size: 16px;
 		font-weight: 300;
 	}
+	@media screen and (max-width: 576px){
+		font-size: 14px;
+		font-weight: 300;
+	}
 }
 
 
@@ -1289,8 +1370,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	@media screen and (max-width: 728px){
 		height: 400px;
 	}
-	@media screen and (max-width: 480px){
-		height: 200px;
+	@media screen and (max-width: 576px){
+		height: 300px;
+
 	}
 }
 
@@ -1321,9 +1403,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 			margin-bottom: 8px;
 		}
 
-		@media screen and (max-width: 480px){
-			margin-top: 50px;
-			font-size: 40px;
+		@media screen and (max-width: 576px){
+			margin-top: 80px;
+			font-size: 55px;
 			margin-bottom: 6px;
 		}
     }
@@ -1335,7 +1417,10 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    font-weight: 300;
 	    letter-spacing: 1.5px;
 	    text-align: center;
-	    margin-top: 0px;
+		margin-top: 0px;
+		@media screen and (max-width: 576px){
+			font-size: 13px;
+		}
 	}
 	
 	.fa-angle-down {
@@ -1354,6 +1439,14 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 			font-size: 50px;
 			padding-bottom: 20px;
 		}
+		@media screen and (max-width: 728px){
+			font-size: 40px;
+			padding-bottom: 20px;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 35px;
+			padding-bottom: 20px;
+		}
     }
     p {
         font-family: $text-font;
@@ -1366,7 +1459,12 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 			line-height: 1.8rem;
 		}
 		@media screen and (max-width: 728px){
-			font-size: 20px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.6rem;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 16px;
 			font-weight: 300;
 			line-height: 1.6rem;
 		}
@@ -1385,6 +1483,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	color: white;
 	@media screen and (max-width: 728px){
 		font-size: 24px;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 20px;
 	}
 }
 
@@ -1410,9 +1511,14 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
     position: absolute;
     top: 20%;
 	left: 15%;
-	p{
+	p 	{
 		@media screen and (max-width: 728px){
 			font-size: 60px;
+			left: 10%;
+			top: 10%;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 45px;
 			left: 10%;
 			top: 10%;
 		}
@@ -1435,6 +1541,12 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 		font-size: 20px;
 		left: 10%;
 	}
+	@media screen and (max-width: 728px){
+		font-size: 20px;
+		left: 10%;
+		top: 10%;
+	}
+	
 }
 
 .section-3 {
@@ -1449,6 +1561,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 		color: $secondary-color;
 		@media screen and (max-width: 728px){
 			font-size: 55px;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 42px;
 		}
     }
     p {
@@ -1502,7 +1617,7 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	@media screen and (max-width: 728px){
 		height: 300px;
 	}
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 576px){
 		height: 300px;
 	}
 }
@@ -1534,9 +1649,9 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 			margin-bottom: 8px;
 		}
 
-		@media screen and (max-width: 480px){
-			margin-top: 100px;
-			font-size: 40px;
+		@media screen and (max-width: 576px){
+			margin-top: 95px;
+			font-size: 55px;
 			margin-bottom: 6px;
 		}
     }
@@ -1548,7 +1663,10 @@ p {  /*P FRASE-PRINCIPAL TODAS LAS SECCIONES*/
 	    font-weight: 300;
 	    letter-spacing: 1.5px;
 	    text-align: center;
-	    margin-top: 0px;
+		margin-top: 0px;
+		@media screen and (max-width: 576px){
+			font-size: 14px;
+		}
 	}
 	
 	.fa-angle-down {
@@ -1768,7 +1886,7 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	@media screen and (max-width: 728px){
 		height: 400px;
 	}
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 576px){
 		height: 300px;
 	}
 }
@@ -1800,9 +1918,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 			margin-bottom: 8px;
 		}
 
-		@media screen and (max-width: 480px){
-			margin-top: 80px;
-			font-size: 40px;
+		@media screen and (max-width: 576px){
+			margin-top: 100px;
+			font-size: 55px;
 			margin-bottom: 6px;
 		}
     }
@@ -1814,7 +1932,10 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    font-weight: 300;
 	    letter-spacing: 1.5px;
 	    text-align: center;
-	    margin-top: 0px;
+		margin-top: 0px;
+		@media screen and (max-width: 576px){
+			font-size: 14px;
+		}
 	}
 	
 	.fa-angle-down {
@@ -1836,6 +1957,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    font-weight: 200;
 	    letter-spacing: 0.08rem;
 		padding-top: 10px;	
+		@media screen and (max-width: 576px){
+			font-size: 18px;
+		}
 	}
 
 }
@@ -1845,6 +1969,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	font-size: 16px;
 	font-weight: 300;
 	padding-top: 5px;
+	@media screen and (max-width: 576px){
+		font-size: 18px;
+	}
 }
 
 .serv-icon {
@@ -1856,6 +1983,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	font-weight: 200;
 	font-size: 14px;
 	letter-spacing: 0.06rem;
+	@media screen and (max-width: 576px){
+		font-size: 16px;
+	}
 }
 
 .linea-serv {
@@ -1880,7 +2010,7 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 		color: $primary-color;
 	}
 	p {
-		font-weight: 300;
+		font-weight: 200;
 	}
 }
 
@@ -1897,8 +2027,8 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	@media screen and (max-width: 728px){
 		height: 400px;
 	}
-	@media screen and (max-width: 480px){
-		height: 250px;
+	@media screen and (max-width: 576px){
+		height: 300px;
 	}
 }
 
@@ -1928,9 +2058,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 			margin-bottom: 8px;
 		}
 
-		@media screen and (max-width: 480px){
-			margin-top: 80px;
-			font-size: 40px;
+		@media screen and (max-width: 576px){
+			margin-top: 90px;
+			font-size: 55px;
 			margin-bottom: 6px;
 		}
     }
@@ -1942,7 +2072,10 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	    font-weight: 300;
 	    letter-spacing: 1.5px;
 	    text-align: center;
-	    margin-top: 0px;
+		margin-top: 0px;
+		@media screen and (max-width: 576px){
+			font-size: 14px;
+		}
 	}
 	
 	.fa-angle-down {
@@ -2005,7 +2138,7 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	@media screen and (max-width: 728px){
 		height: 400px;
 	}
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: 576px){
 		height: 300px;
 	}
 }
@@ -2043,9 +2176,9 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 			margin-bottom: 8px;
 		}
 
-		@media screen and (max-width: 480px){
-			margin-top: 100px;
-			font-size: 40px;
+		@media screen and (max-width: 576px){
+			margin-top: 80px;
+			font-size: 55px;
 			margin-bottom: 6px;
 		}
     }
@@ -2063,8 +2196,8 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 			font-size: 14px;
 			margin-bottom: 0px;
 		}
-		@media screen and (max-width: 480px){
-			font-size:10px;
+		@media screen and (max-width: 576px){
+			font-size:14px;
 			margin-bottom: 0px;
 		}
 	}
@@ -2097,14 +2230,21 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
     h3 {
 	font-family: $title-font;
 	font-size: 16px;
+		@media screen and (max-width: 576px){
+			font-size: 14px;
+		}
 		@media screen and (max-width: 728px){
-			font-size: 20px;
+			font-size: 16px;
 		}
 	}
 	p {
+		@media screen and (max-width: 576px){
+			font-size: 12px;
+			font-weight: 300;
+		}
 		@media screen and (max-width: 728px){
-			font-size: 16px;
-			font-weight: 400;
+			font-size: 14px;
+			font-weight: 300;
 		}
 	}
 }
@@ -2131,14 +2271,20 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 	font-weight: 300;
 	letter-spacing: 0.04rem;
     @media screen and (max-width: 728px){
-		font-size: 16px;
+		font-size: 14px;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 12px;
 	}
     h2 {
 	    font-family: $title-font;
 	    font-size: 30px;
 		color: $primary-color;
+		@media screen and (max-width: 576px){
+			font-size:25px;
+		}
 		@media screen and (max-width: 728px){
-			font-size:38px;
+			font-size:28px;
 		}
     }
 
