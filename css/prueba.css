@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: "Butler";
-  src: url("/font/butler"); }
+  src: url("../font/Butler-Medium.woff"); }
 
 .contenedor-eventos {
   /*Seccion Eventos*/
