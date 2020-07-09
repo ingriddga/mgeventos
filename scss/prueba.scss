@@ -178,7 +178,7 @@ body {
 	font-family: $title-font;
 	font-size: 40px;
 	color: $secondary-color;
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		font-size: 50px;
 	}
 	@media screen and (max-width: 768px){
@@ -195,7 +195,7 @@ body {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		font-size: 18px;
 	}
 	@media screen and (max-width: 768px){
@@ -219,6 +219,10 @@ body {
 	    font-size: 14px;
 	    font-weight: 200;
 		letter-spacing: 0.08em;
+		@media screen and (max-width: 1200px){
+			font-size: 16px;
+			font-weight: 300;
+		}
 		@media screen and (max-width: 768px){
 			font-size: 16px;
 			font-weight: 300;
@@ -268,9 +272,7 @@ body {
 	justify-content: center;
 	border: 1px #2d2d2d;
 	overflow: hidden;
-	@media screen and (max-width: 1023px){
-		height: 80%;
-	}
+	
 	@media screen and (max-width: 992px){
 		height: 80%;
 	}
@@ -472,7 +474,7 @@ body {
 	    font-family: $title-font;
 	    font-size: 36px;
 		color: $secondary-color;
-		@media screen and (max-width: 1023px){
+		@media screen and (max-width: 1200px){
 			font-size: 40px;
 		}
 		@media screen and (max-width: 576px){
@@ -485,11 +487,14 @@ body {
 	    font-weight: 200;
 	    letter-spacing: 0.08em;
 		color: $primary-grey;
-		@media screen and (max-width: 1023px){
-			font-size: 18px;
+		@media screen and (max-width: 1200px){
+			font-size: 16px;
+		}
+		@media screen and (max-width: 728px){
+			font-size: 14px;
 		}
 		@media screen and (max-width: 576px){
-			font-size: 16px;
+			font-size: 14px;
 		}
     }
 }  
@@ -508,23 +513,32 @@ body {
 	font-weight: 400;
 	color: white;
 	position: absolute;
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		font-size: 35px;
-	
 	}
+
+	@media screen and (max-width: 992px){
+		font-size: 30px;
+	}
+
 	@media screen and (max-width: 576px){
-		font-size: 28px;
+		font-size: 42px;
 	
 	}
 }
 
 .corp {
+	@media screen and (max-width: 1200px){
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 992px){
+		font-size: 26px;
+	}
 	@media screen and (max-width:576px){
-		font-size: 25px;
-	
+		font-size: 38px;
 	}
 }
-
 
 .corp {
 	top: 45%;
@@ -541,9 +555,9 @@ body {
 	left: 35%;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1200px){
 	.corp {
-		left: 12%;
+		left: 16%;
 	}
 	.even, .soc {
 		left: 28%;
@@ -553,7 +567,7 @@ body {
 
 @media screen and (max-width: 992px){
 	.corp {
-		left: 5%;
+		left: 10%;
 	}
 	.even, .soc {
 		left: 24%;
@@ -573,13 +587,13 @@ body {
 
 @media screen and (max-width: 576px){
 	.corp {
-		left: 5%;
+		left: 22%;
 	}
 	.even, .soc {
-		left: 20%;
+		left: 32%;
 
 	}
-  }
+}
 
   .content .content-overlay {
 	background: rgba(151, 124, 73, 0.966);
@@ -708,7 +722,7 @@ body {
 	border-color: white;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1200px){
 	.hero-text {
 		width: 80%;
 		h3 {
@@ -782,7 +796,7 @@ body {
 	font-size: 38px;
 	color: $secondary-color;
 	text-align: center;
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		font-size: 42px;
 	}
 
@@ -797,12 +811,16 @@ body {
 	font-weight: 300;
 	letter-spacing: 0.08em;
 	color: $primary-grey;
-	@media screen and (max-width: 1023px){
+	@media screen and (max-width: 1200px){
 		font-size: 18px;
 	}
 	@media screen and (max-width: 768px){
 		margin-bottom: 0;
-		font-size: 16px;
+		font-size: 14px;
+	}
+	@media screen and (max-width: 576px){
+		margin-bottom: 0;
+		font-size: 12px;
 	}
 }
 
@@ -817,8 +835,8 @@ body {
     letter-spacing: 0.08em;
     line-height: 1.5rem;
 	color: $primary-grey;
-	@media screen and (max-width: 1023px){
-		font-size: 20px;
+	@media screen and (max-width: 1200px){
+		font-size: 16px;
 		line-height: 2rem;
 	}
 	@media screen and (max-width: 768px){
@@ -832,6 +850,10 @@ body {
 	@media screen and (max-width: 768px){
 		display: none;
 	}
+
+	@media screen and (max-width: 576px){
+		display: none;
+	}
 }
 
 .susana,
@@ -842,6 +864,9 @@ body {
 	text-transform: uppercase;
     letter-spacing: 0.1em;
 	color: $primary-grey;
+	@media screen and (max-width: 1200px){
+		font-size: 16px;
+	}
 	@media screen and (max-width: 768px){
 		font-size: 16px;
 	}
@@ -852,8 +877,14 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 0.05em;
+	@media screen and (max-width: 1200px){
+		font-size: 16px;
+	}
 	@media screen and (max-width: 768px){
-		font-size: 18px;
+		font-size: 16px;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 14px;
 	}
 }
 
@@ -877,7 +908,7 @@ body {
     margin-top: 20px;
 	background-color: $secondary-color;
 	@media screen and (max-width: 576px){
-		height: 600px;
+		height: 400px;
 	}
 }
 
@@ -901,21 +932,19 @@ body {
         letter-spacing: 0.08em;
         color: white;
 	}
-	@media screen and (max-width: 576px){
-		height: 300px;
-		padding-top: 0px;
-		margin-top: 2px;	
-	}
 }  
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
 	.gracias-text h3 { 
 		font-family: $title-font;
-		font-size: 60px;
+		font-size: 70px;
 		font-weight: 400;
 		letter-spacing: 0.03em;
 		line-height: 1em;
+	}
+	.gracias-text p{
+		font-size: 20px;
 	}
 }
 
@@ -945,7 +974,7 @@ body {
 @media screen and (max-width: 576px) {
 	.gracias-text h3 { 
 		font-family: $title-font;
-		font-size: 46px;
+		font-size: 42px;
 		font-weight: 400;
 		letter-spacing: 0.03em;
 		line-height: 1em;
@@ -964,11 +993,11 @@ body {
 	}
 	@media screen and (max-width: 576px) {
 		background-size: cover;
-		background-position: top;
-		height: 200px;
+		background-position: right;
+		height: 400px;
 	}
 
-}
+} 
 
 
 /*BUTTONS*/
@@ -1246,6 +1275,12 @@ h1 {
 	font-weight: 200;
 	letter-spacing: 0.08em;
 	color:$primary-grey;
+	@media screen and (max-width: 1200px){
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.6em;
+		padding-bottom: 5px;
+	}
 	@media screen and (max-width: 768px){
 		font-size: 16px;
 		font-weight: 300;
