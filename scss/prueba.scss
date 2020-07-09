@@ -187,6 +187,9 @@ body {
 	@media screen and (max-width: 576px){
 		font-size: 30px;
 	}
+	@media screen and (min-width: 400px){
+		font-size: 28px;
+	}
 }
 
 .subtitulo-mg {
@@ -202,6 +205,9 @@ body {
 		font-size: 14px;
 	}
 	@media screen and (max-width: 576px){
+		font-size: 12px;
+	}
+	@media screen and (min-width: 400px){
 		font-size: 12px;
 	}
 }
@@ -237,6 +243,9 @@ body {
 	}
 	@media screen and (max-width: 576px){
 		width: 30%;
+	}
+	@media screen and (min-width: 400px){
+		width: 40%;
 	}
 }
 
@@ -279,7 +288,16 @@ body {
 	@media screen and (max-width: 768px){
 		height: 70%;
 	}
+	@media screen and (min-width: 400px){
+		height: 60%;
+	}
  }
+
+.carousel-nav-icon {
+	@media screen and (min-width: 400px){
+		width: 90%;
+	}
+}
 
  .images-2 {
 	@media screen and (max-width: 992px){
@@ -523,7 +541,9 @@ body {
 
 	@media screen and (max-width: 576px){
 		font-size: 42px;
-	
+	}
+	@media screen and (min-width: 400px){
+		font-size: 35px;
 	}
 }
 
@@ -537,6 +557,9 @@ body {
 	}
 	@media screen and (max-width:576px){
 		font-size: 38px;
+	}
+	@media screen and (min-width: 400px){
+		font-size: 32px;
 	}
 }
 
@@ -591,6 +614,15 @@ body {
 	}
 	.even, .soc {
 		left: 32%;
+
+	}
+}
+@media screen and (min-width: 400px){
+	.corp {
+		left: 16%;
+	}
+	.even, .soc {
+		left: 28%;
 
 	}
 }
@@ -910,6 +942,9 @@ body {
 	@media screen and (max-width: 576px){
 		height: 400px;
 	}
+	@media screen and (min-width: 400px){
+		height: 350px;
+	}
 }
 
 .gracias-text {
@@ -982,6 +1017,20 @@ body {
 	}
 }
 
+@media screen and (min-width: 400px) {
+	.gracias-text h3 { 
+		font-family: $title-font;
+		font-size: 28px;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1em;
+		padding-top: 0px;
+	}
+	.gracias-text p{
+		font-size: 12px;
+	}
+}
+
 .gracias-img {
 	background-image: url("../images/gracias.jpg");
 	background-repeat: no-repeat;
@@ -995,6 +1044,11 @@ body {
 		background-size: cover;
 		background-position: right;
 		height: 400px;
+	}
+	@media screen and (max-width: 576px) {
+		background-size: cover;
+		background-position: right;
+		height: 350px;
 	}
 
 } 
@@ -1288,6 +1342,9 @@ h1 {
 	@media screen and (max-width: 576px){
 		font-size: 14px;
 		font-weight: 300;
+	}
+	@media screen and (min-width: 400px){
+		font-size: 13px;
 	}
 }
 

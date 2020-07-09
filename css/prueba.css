@@ -142,6 +142,9 @@ body {
   @media screen and (max-width: 576px) {
     .one-section h3 {
       font-size: 30px; } }
+  @media screen and (min-width: 400px) {
+    .one-section h3 {
+      font-size: 28px; } }
 
 .subtitulo-mg {
   font-family: "Butler";
@@ -156,6 +159,9 @@ body {
     .subtitulo-mg {
       font-size: 14px; } }
   @media screen and (max-width: 576px) {
+    .subtitulo-mg {
+      font-size: 12px; } }
+  @media screen and (min-width: 400px) {
     .subtitulo-mg {
       font-size: 12px; } }
 
@@ -189,6 +195,9 @@ body {
   @media screen and (max-width: 576px) {
     .conocenos-1 {
       width: 30%; } }
+  @media screen and (min-width: 400px) {
+    .conocenos-1 {
+      width: 40%; } }
 
 .conocenos-1:hover {
   background-color: #C59D5F;
@@ -222,6 +231,13 @@ body {
   @media screen and (max-width: 768px) {
     .prueba-images {
       height: 70%; } }
+  @media screen and (min-width: 400px) {
+    .prueba-images {
+      height: 60%; } }
+
+@media screen and (min-width: 400px) {
+  .carousel-nav-icon {
+    width: 90%; } }
 
 @media screen and (max-width: 992px) {
   .images-2 {
@@ -450,6 +466,9 @@ body {
   @media screen and (max-width: 576px) {
     .corp, .even, .soc {
       font-size: 42px; } }
+  @media screen and (min-width: 400px) {
+    .corp, .even, .soc {
+      font-size: 35px; } }
 
 @media screen and (max-width: 1200px) {
   .corp {
@@ -462,6 +481,10 @@ body {
 @media screen and (max-width: 576px) {
   .corp {
     font-size: 38px; } }
+
+@media screen and (min-width: 400px) {
+  .corp {
+    font-size: 32px; } }
 
 .corp {
   top: 45%;
@@ -498,6 +521,12 @@ body {
     left: 22%; }
   .even, .soc {
     left: 32%; } }
+
+@media screen and (min-width: 400px) {
+  .corp {
+    left: 16%; }
+  .even, .soc {
+    left: 28%; } }
 
 .content .content-overlay {
   background: rgba(151, 124, 73, 0.966);
@@ -763,6 +792,9 @@ body {
   @media screen and (max-width: 576px) {
     .gracias {
       height: 400px; } }
+  @media screen and (min-width: 400px) {
+    .gracias {
+      height: 350px; } }
 
 .gracias-text {
   top: 20%;
@@ -817,6 +849,17 @@ body {
     line-height: 1em;
     padding-top: 0px; } }
 
+@media screen and (min-width: 400px) {
+  .gracias-text h3 {
+    font-family: "Butler";
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1em;
+    padding-top: 0px; }
+  .gracias-text p {
+    font-size: 12px; } }
+
 .gracias-img {
   background-image: url("../images/gracias.jpg");
   background-repeat: no-repeat;
@@ -830,6 +873,11 @@ body {
       background-size: cover;
       background-position: right;
       height: 400px; } }
+  @media screen and (max-width: 576px) {
+    .gracias-img {
+      background-size: cover;
+      background-position: right;
+      height: 350px; } }
 
 /*BUTTONS*/
 .btn-outline-light {
@@ -1055,6 +1103,9 @@ h1 {
     .main-text {
       font-size: 14px;
       font-weight: 300; } }
+  @media screen and (min-width: 400px) {
+    .main-text {
+      font-size: 13px; } }
 
 /*BUTTONS*/
 .frase-index button {
