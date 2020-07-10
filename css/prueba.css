@@ -170,7 +170,7 @@ body {
   background-color: transparent;
   border-radius: 0;
   height: 8%;
-  width: 15%; }
+  /*width: 15%;*/ }
   .conocenos-1 a {
     color: #1d1d1d;
     font-family: "Montserrat";
@@ -179,11 +179,11 @@ body {
     letter-spacing: 0.08em; }
     @media screen and (max-width: 1200px) {
       .conocenos-1 a {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300; } }
     @media screen and (max-width: 768px) {
       .conocenos-1 a {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300; } }
     @media screen and (max-width: 576px) {
       .conocenos-1 a {
@@ -195,9 +195,6 @@ body {
   @media screen and (max-width: 576px) {
     .conocenos-1 {
       width: 30%; } }
-  @media screen and (min-width: 400px) {
-    .conocenos-1 {
-      width: 40%; } }
 
 .conocenos-1:hover {
   background-color: #C59D5F;
@@ -465,9 +462,6 @@ body {
       font-size: 30px; } }
   @media screen and (max-width: 576px) {
     .corp, .even, .soc {
-      font-size: 42px; } }
-  @media screen and (min-width: 400px) {
-    .corp, .even, .soc {
       font-size: 35px; } }
 
 @media screen and (max-width: 1200px) {
@@ -480,11 +474,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .corp {
-    font-size: 38px; } }
-
-@media screen and (min-width: 400px) {
-  .corp {
-    font-size: 32px; } }
+    font-size: 30px; } }
 
 .corp {
   top: 45%;
@@ -506,7 +496,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .corp {
-    left: 10%; }
+    left: 12%; }
   .even, .soc {
     left: 24%; } }
 
@@ -521,12 +511,6 @@ body {
     left: 22%; }
   .even, .soc {
     left: 32%; } }
-
-@media screen and (min-width: 400px) {
-  .corp {
-    left: 16%; }
-  .even, .soc {
-    left: 28%; } }
 
 .content .content-overlay {
   background: rgba(151, 124, 73, 0.966);
@@ -651,7 +635,7 @@ body {
     width: 80%; }
     .hero-text h3 {
       font-family: "Butler";
-      font-size: 44px;
+      font-size: 42px;
       color: #FFFFFF;
       padding-bottom: 10px; }
     .hero-text p {
@@ -704,6 +688,9 @@ body {
   @media screen and (max-width: 1200px) {
     .texto-test {
       font-size: 18px; } }
+  @media screen and (max-width: 992px) {
+    .texto-test {
+      font-size: 17px; } }
   @media screen and (max-width: 768px) {
     .texto-test {
       margin-bottom: 0;
@@ -718,7 +705,7 @@ body {
 
 .opinion {
   font-family: "Montserrat";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 1.5rem;
@@ -731,6 +718,10 @@ body {
     .opinion {
       font-size: 16px;
       line-height: 1.7rem; } }
+  @media screen and (max-width: 576px) {
+    .opinion {
+      font-size: 14px;
+      line-height: 1.5rem; } }
 
 .line-test {
   width: 10%; }
@@ -792,16 +783,13 @@ body {
   @media screen and (max-width: 576px) {
     .gracias {
       height: 400px; } }
-  @media screen and (min-width: 400px) {
-    .gracias {
-      height: 350px; } }
 
 .gracias-text {
   top: 20%;
-  min-height: 50%; }
+  min-height: 40%; }
   .gracias-text h3 {
     font-family: "Butler";
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.04em;
@@ -843,22 +831,11 @@ body {
 @media screen and (max-width: 576px) {
   .gracias-text h3 {
     font-family: "Butler";
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1em;
     padding-top: 0px; } }
-
-@media screen and (min-width: 400px) {
-  .gracias-text h3 {
-    font-family: "Butler";
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    line-height: 1em;
-    padding-top: 0px; }
-  .gracias-text p {
-    font-size: 12px; } }
 
 .gracias-img {
   background-image: url("../images/gracias.jpg");
@@ -1717,13 +1694,20 @@ p {
 
 .icons-1 h2 {
   font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0.08rem;
+  line-height: 1.8rem;
   padding-top: 10px; }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 992px) {
     .icons-1 h2 {
       font-size: 18px; } }
+  @media screen and (max-width: 768px) {
+    .icons-1 h2 {
+      font-size: 16px; } }
+  @media screen and (max-width: 576px) {
+    .icons-1 h2 {
+      font-size: 16px; } }
 
 .serv-name {
   font-family: "Montserrat";

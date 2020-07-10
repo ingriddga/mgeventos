@@ -218,7 +218,7 @@ body {
 	background-color: transparent;
 	border-radius: 0;
 	height: 8%;
-	width: 15%;
+	/*width: 15%;*/
     a {
 	    color: rgb(29, 29, 29);
 	    font-family: $text-font;
@@ -226,11 +226,11 @@ body {
 	    font-weight: 200;
 		letter-spacing: 0.08em;
 		@media screen and (max-width: 1200px){
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 300;
 		}
 		@media screen and (max-width: 768px){
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 300;
 		}
 		@media screen and (max-width: 576px){
@@ -243,9 +243,6 @@ body {
 	}
 	@media screen and (max-width: 576px){
 		width: 30%;
-	}
-	@media screen and (min-width: 400px){
-		width: 40%;
 	}
 }
 
@@ -534,15 +531,10 @@ body {
 	@media screen and (max-width: 1200px){
 		font-size: 35px;
 	}
-
 	@media screen and (max-width: 992px){
 		font-size: 30px;
 	}
-
 	@media screen and (max-width: 576px){
-		font-size: 42px;
-	}
-	@media screen and (min-width: 400px){
 		font-size: 35px;
 	}
 }
@@ -551,15 +543,11 @@ body {
 	@media screen and (max-width: 1200px){
 		font-size: 32px;
 	}
-
 	@media screen and (max-width: 992px){
 		font-size: 26px;
 	}
 	@media screen and (max-width:576px){
-		font-size: 38px;
-	}
-	@media screen and (min-width: 400px){
-		font-size: 32px;
+		font-size: 30px;
 	}
 }
 
@@ -590,13 +578,12 @@ body {
 
 @media screen and (max-width: 992px){
 	.corp {
-		left: 10%;
+		left: 12%;
 	}
 	.even, .soc {
 		left: 24%;
-
 	}
-  }
+}
 
 @media screen and (max-width: 728px){
 	.corp {
@@ -604,7 +591,6 @@ body {
 	}
 	.even, .soc {
 		left: 28%;
-
 	}
 }
 
@@ -614,18 +600,9 @@ body {
 	}
 	.even, .soc {
 		left: 32%;
-
 	}
 }
-@media screen and (min-width: 400px){
-	.corp {
-		left: 16%;
-	}
-	.even, .soc {
-		left: 28%;
 
-	}
-}
 
   .content .content-overlay {
 	background: rgba(151, 124, 73, 0.966);
@@ -774,7 +751,7 @@ body {
 		width: 80%;
 		h3 {
 			font-family: $title-font;
-			font-size: 44px;
+			font-size: 42px;
 			color: #FFFFFF;
 			padding-bottom: 10px;
 		} 
@@ -846,6 +823,9 @@ body {
 	@media screen and (max-width: 1200px){
 		font-size: 18px;
 	}
+	@media screen and (max-width: 992px){
+		font-size: 17px;
+	}
 	@media screen and (max-width: 768px){
 		margin-bottom: 0;
 		font-size: 14px;
@@ -862,7 +842,7 @@ body {
 
 .opinion {
 	font-family: $text-font;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
     letter-spacing: 0.08em;
     line-height: 1.5rem;
@@ -874,6 +854,10 @@ body {
 	@media screen and (max-width: 768px){
 		font-size: 16px;
 		line-height: 1.7rem;
+	}
+	@media screen and (max-width: 576px){
+		font-size: 14px;
+		line-height: 1.5rem;
 	}
 }
 
@@ -942,18 +926,15 @@ body {
 	@media screen and (max-width: 576px){
 		height: 400px;
 	}
-	@media screen and (min-width: 400px){
-		height: 350px;
-	}
 }
 
 .gracias-text {
 	top: 20%;
-	min-height: 50%;
+	min-height: 40%;
    
     h3 {
 	    font-family: $title-font;
-	    font-size: 80px;
+	    font-size: 40px;
 	    font-weight: 400;
     	letter-spacing: 0.03em;
 	    line-height: 1.04em;
@@ -1009,25 +990,11 @@ body {
 @media screen and (max-width: 576px) {
 	.gracias-text h3 { 
 		font-family: $title-font;
-		font-size: 42px;
+		font-size: 38px;
 		font-weight: 400;
 		letter-spacing: 0.03em;
 		line-height: 1em;
 		padding-top: 0px;
-	}
-}
-
-@media screen and (min-width: 400px) {
-	.gracias-text h3 { 
-		font-family: $title-font;
-		font-size: 28px;
-		font-weight: 400;
-		letter-spacing: 0.03em;
-		line-height: 1em;
-		padding-top: 0px;
-	}
-	.gracias-text p{
-		font-size: 12px;
 	}
 }
 
@@ -2045,12 +2012,19 @@ p {  /*P INTRO-CATERING - NOSE COMO HACER QUE HAGA LA ANIMACION CUANDO HAGO SCRO
 .icons-1 {
     h2 {
 	    font-family: $text-font;
-	    font-size: 20px;
-	    font-weight: 200;
-	    letter-spacing: 0.08rem;
+	    font-size: 18px;
+	    font-weight: 300;
+		letter-spacing: 0.08rem;
+		line-height: 1.8rem;
 		padding-top: 10px;	
-		@media screen and (max-width: 576px){
+		@media screen and (max-width: 992px){
 			font-size: 18px;
+		}
+		@media screen and (max-width: 768px){
+			font-size: 16px;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 16px;
 		}
 	}
 
